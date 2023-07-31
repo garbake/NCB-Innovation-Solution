@@ -75,15 +75,15 @@
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-              class="rounded-md bg-blue-800 px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="/"
+              class="rounded-md bg-blue-800 hover:bg-blue-700 transition px-5 py-2.5 text-sm font-medium text-white shadow"
+              href="/login"
             >
               Login
             </a>
 
             <div class="hidden sm:flex">
               <a
-                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-800"
+                class="rounded-md bg-gray-100  hover:bg-blue-800 transition hover:text-white  px-5 py-2.5 text-sm font-medium text-blue-800"
                 href="/signup"
               >
                 Signup

@@ -1,0 +1,362 @@
+<script>
+    import { createEventDispatcher } from "svelte";
+    const dispatch = createEventDispatcher();
+    let currentStep = 1;
+
+    // @ts-ignore
+    function goToStep(step) {
+        currentStep = step;
+    }
+
+    function nextStep() {
+        if (currentStep < 3) {
+            currentStep++;
+        }
+    }
+
+    // @ts-ignore
+    function previousStep() {
+        if (currentStep > 1) {
+            currentStep--;
+        }
+    }
+
+    function handleSubmit() {
+        // Handle form submission here
+        dispatch("formSubmitted");
+    }
+</script>
+
+<ol
+    class="flex items-center justify-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4"
+>
+    {#each [1, 2, 3] as step}
+        <li
+            class="flex items-center cursor-pointer {currentStep === step
+                ? 'text-blue-600 dark:text-blue-500'
+                : 'text-gray-500'}"
+            on:click={() => goToStep(step)}
+        >
+            <span
+                class="flex items-center justify-center w-5 h-5 mr-2 text-xs border {currentStep ===
+                step
+                    ? 'border-blue-600 dark:border-blue-500'
+                    : 'border-gray-500'} rounded-full shrink-0 dark:border-gray-400"
+            >
+                {step}
+            </span>
+            {#if step === 1}
+                Business <span class="hidden sm:inline-flex sm:ml-2">Info</span>
+            {:else if step === 2}
+                Debtors <span class="hidden sm:inline-flex sm:ml-2">Info</span>
+            {:else}
+                Review
+            {/if}
+            {#if currentStep !== step}
+                <svg
+                    class="w-3 h-3 ml-2 sm:ml-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 12 10"
+                >
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m7 9 4-4-4-4M1 9l4-4-4-4"
+                    />
+                </svg>
+            {/if}
+        </li>
+    {/each}
+</ol>
+
+{#if currentStep === 1}
+    <form on:submit|preventDefault={nextStep}>
+        <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
+            <!-- Your Step 1 form fields here -->
+            <div>
+                <label
+                    for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >First name</label
+                >
+                <input
+                    type="text"
+                    id="first_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="John"
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="last_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Last name</label
+                >
+                <input
+                    type="text"
+                    id="last_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Doe"
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="company"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Company</label
+                >
+                <input
+                    type="text"
+                    id="company"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Flowbite"
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="phone"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Phone number</label
+                >
+                <input
+                    type="tel"
+                    id="phone"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="123-45-678"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="website"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Placeholder</label
+                >
+                <input
+                    type="text"
+                    id="website"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="visitors"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Placeholder</label
+                >
+                <input
+                    type="number"
+                    id="visitors"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                />
+            </div>
+        </div>
+        <div class="px-3">
+            <div class="mb-6">
+                <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Email address</label
+                >
+                <input
+                    type="email"
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="john.doe@company.com"
+                    required
+                />
+            </div>
+            <!-- <div class="mb-6">
+                <label
+                    for="password"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Password</label
+                >
+                <input
+                    type="password"
+                    id="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="•••••••••"
+                    required
+                />
+            </div>
+            <div class="mb-6">
+                <label
+                    for="confirm_password"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Confirm password</label
+                >
+                <input
+                    type="password"
+                    id="confirm_password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="•••••••••"
+                    required
+                />
+            </div> -->
+        </div>
+
+        <button
+            type="submit"
+            class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+        >
+            Continue to Step 2
+        </button>
+    </form>
+{/if}
+
+{#if currentStep === 2}
+    <form on:submit|preventDefault={nextStep}>
+        <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
+            <!-- Your Step 2 form fields here -->
+            <div>
+                <label
+                    for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Business name</label
+                >
+                <input
+                    type="text"
+                    id="first_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="John"
+                    required
+                />
+            </div>
+            <!-- Business relationship length -->
+            <div>
+                <label
+                    for="relationship_length"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Business relation since</label
+                >
+                <input
+                    type="date"
+                    id="relationship_lenght"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-800 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Doe"
+                    required
+                />
+            </div>
+            <!-- Email -->
+            <div>
+                <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Email address</label
+                >
+                <input
+                    type="email"
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-800 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="janenterprise@gmail.com"
+                    required
+                />
+            </div>
+            <!-- Phone number -->
+            <div>
+                <label
+                    for="phone"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Phone number</label
+                >
+                <input
+                    type="number"
+                    id="phone"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="123-45-678"
+                    required
+                />
+            </div>
+            <!-- <div>
+              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
+              <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
+          </div>
+          <div>
+              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
+              <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+          </div> -->
+        </div>
+        <div class="px-3">
+            <div class="mb-6">
+                <label
+                    for="debtor_address"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                    Address</label
+                >
+                <input
+                    type="text"
+                    id="debtor_address"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="up down round town"
+                    required
+                />
+            </div>
+            <div class="mb-6">
+                <label
+                    for="password"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >something</label
+                >
+                <input
+                    type="text"
+                    id="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="something"
+                    required
+                />
+            </div>
+        </div>
+
+        <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
+
+             <div>
+              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Have you ever credited this business before? If yes, upload the last invoice</label>
+              <input type="file" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
+          </div>
+          <div>
+              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload current invoice</label>
+              <input type="file" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+          </div>
+
+        </div>
+
+        <button
+            type="submit"
+            class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+        >
+            Continue to Step 3
+        </button>
+    </form>
+{/if}
+
+{#if currentStep === 3}
+    <form on:submit|preventDefault={handleSubmit}>
+        <div class="mb-6">
+            <h3 class="text-xl font-bold mb-4">Step 3</h3>
+            <!-- Step 3 form fields -->
+            <div>
+                <!-- Your Step 3 form fields here -->
+            </div>
+            <button
+                type="submit"
+                class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+            >
+                Submit
+            </button>
+        </div>
+    </form>
+{/if}
