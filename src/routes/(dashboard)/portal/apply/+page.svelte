@@ -81,7 +81,7 @@
                 <label
                     for="first_name"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >First name</label
+                    >Type of business</label
                 >
                 <input
                     type="text"
@@ -95,7 +95,7 @@
                 <label
                     for="last_name"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Last name</label
+                    >Type of goods or services you provide</label
                 >
                 <input
                     type="text"
@@ -109,7 +109,7 @@
                 <label
                     for="company"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Company</label
+                    >How often you credit goods/services</label
                 >
                 <input
                     type="text"
@@ -123,7 +123,7 @@
                 <label
                     for="phone"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Phone number</label
+                    >How often you credit goods</label
                 >
                 <input
                     type="tel"
@@ -138,7 +138,7 @@
                 <label
                     for="website"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Placeholder</label
+                    >Your type of debtors</label
                 >
                 <input
                     type="text"
