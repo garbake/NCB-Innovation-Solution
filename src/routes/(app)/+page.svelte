@@ -58,9 +58,7 @@ class="relative bg-[url(https://images.unsplash.com/photo-1664575600796-ffa828c5
           <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
   
           <p class="mt-4 text-gray-600">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-            atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-            veniam tempora deserunt? Molestiae eius quidem quam repellat.
+            
           </p>
   
           <div class="space-y-3 pt-3">
@@ -69,7 +67,7 @@ class="relative bg-[url(https://images.unsplash.com/photo-1664575600796-ffa828c5
             >
               <div class="flex cursor-pointer items-center justify-between ">
                 <h2 class="text-lg font-medium text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                  
                 </h2>
               </div>
           
@@ -80,7 +78,7 @@ class="relative bg-[url(https://images.unsplash.com/photo-1664575600796-ffa828c5
             >
               <div class="flex cursor-pointer items-center justify-between gap-1.5">
                 <h2 class="text-lg font-medium text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                
                 </h2>
               </div>
           
