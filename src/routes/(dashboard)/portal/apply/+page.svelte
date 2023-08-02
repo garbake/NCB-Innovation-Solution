@@ -79,32 +79,37 @@
             <!-- Your Step 1 form fields here -->
             <div>
                 <label
-                    for="first_name"
+                    for="type_of_business"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >Type of business</label
                 >
-                <input
-                    type="text"
+                <select
+                    
                     id="first_name"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ease-linear transition-all duration-150"
                     placeholder="John"
-                    required
-                />
+                    required> 
+                    <option value="" disabled selected>Select your business type</option>
+                    <option value="retailer">Retailer</option>
+                
+                
+                </select>
             </div>
             <div>
                 <label
-                    for="last_name"
+                    for="goods_provided"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >Type of goods or services you provide</label
                 >
                 <input
                     type="text"
-                    id="last_name"
+                    id="goods_provided"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Doe"
+                    placeholder=""
                     required
                 />
             </div>
+
             <div>
                 <label
                     for="company"
