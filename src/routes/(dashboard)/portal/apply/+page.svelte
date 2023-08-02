@@ -84,38 +84,60 @@
                     >Type of business</label
                 >
                 <select
-                    
                     id="first_name"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ease-linear transition-all duration-150"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="John"
-                    required> 
-                    <option value="" disabled selected>Select your business type</option>
-                    <option value="retailer">Retailer</option>
-                
-                
-                </select>
-            </div>
-            <div>
-                <label
-                    for="goods_provided"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Type of goods or services you provide</label
-                >
-                <input
-                    type="text"
-                    id="goods_provided"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder=""
                     required
-                />
+                >
+                    <option value="" disabled selected
+                        >Select your business type</option
+                    >
+                    <option value="retailer">Retailer</option>
+                </select>
             </div>
 
             <div>
                 <label
-                    for="company"
+                    for="how-often-credit-goods"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >How often you credit goods/services</label
                 >
+                <select
+                    id="how-often-credit-goods"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                >
+                    <option value="" disabled selected>Select how often</option>
+                    <option value="Once a week"> Once a week</option>
+                    <option value="Every two weeks"> Every two weeks</option>
+                    <option value="Once a month"> Once a month</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="px-3">
+            <div class="mb-6">
+                <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Describe the types of goods/services you credit</label
+                >
+                <textarea
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="description"
+                    required
+                />
+            </div>
+            </div>
+
+            <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
+            <div>
+                <label
+                    for="company"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >placeholder</label> 
                 <input
                     type="text"
                     id="company"
@@ -135,7 +157,6 @@
                     id="phone"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="123-45-678"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     required
                 />
             </div>
@@ -143,8 +164,7 @@
                 <label
                     for="website"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Your type of debtors</label
-                >
+                    >Your type of debtors</label>
                 <input
                     type="text"
                     id="website"
@@ -168,6 +188,8 @@
                 />
             </div>
         </div>
+        
+
         <div class="px-3">
             <div class="mb-6">
                 <label
@@ -327,16 +349,35 @@
         </div>
 
         <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
-
-             <div>
-              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Have you ever credited this business before? If yes, upload the last invoice</label>
-              <input type="file" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
-          </div>
-          <div>
-              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload current invoice</label>
-              <input type="file" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
-          </div>
-
+            <div>
+                <label
+                    for="website"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Have you ever credited this business before? If yes, upload
+                    the last invoice</label
+                >
+                <input
+                    type="file"
+                    id="website"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="flowbite.com"
+                    required
+                />
+            </div>
+            <div>
+                <label
+                    for="visitors"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Upload current invoice</label
+                >
+                <input
+                    type="file"
+                    id="visitors"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                />
+            </div>
         </div>
 
         <button
