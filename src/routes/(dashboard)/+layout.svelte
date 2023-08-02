@@ -62,13 +62,13 @@
                 <li class="my-px">
                     <span
                         class="flex font-medium text-sm text-black px-4 my-4 uppercase"
-                        >Projects</span
+                        >User Control</span
                     >
                 </li>
 
                 <li class="my-px">
                     <a
-                        href="#"
+                        href="/portal/apply"
                         class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
                     >
                         <span
@@ -88,13 +88,13 @@
                                 />
                             </svg>
                         </span>
-                        <span class="ml-3">Manager</span>
+                        <span class="ml-3">Apply For Insurance</span>
                     </a>
                 </li>
 
                 <li class="my-px">
                     <a
-                        href="#"
+                        href="/portal/upload_invoice"
                         class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
                     >
                         <span
@@ -114,7 +114,7 @@
                                 />
                             </svg>
                         </span>
-                        <span class="ml-3">Tasks</span>
+                        <span class="ml-3">Upload Invoice </span>
                     </a>
                 </li>
 
@@ -140,11 +140,8 @@
                                 />
                             </svg>
                         </span>
-                        <span class="ml-3">Clients</span>
-                        <span
-                            class="flex items-center justify-center text-xs text-red-500 font-semibold bg-red-100 h-6 px-2 rounded-full ml-auto"
-                            >1k</span
-                        >
+                        <span class="ml-3">Make Payment </span>
+                        
                     </a>
                 </li>
 
@@ -154,7 +151,7 @@
                         class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
                     >
                         <span
-                            class="flex items-center justify-center text-lg text-green-400"
+                            class="flex items-center justify-center text-lg text-gray-400"
                         >
                             <svg
                                 fill="none"
@@ -166,13 +163,40 @@
                                 class="h-6 w-6"
                             >
                                 <path
-                                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H9m10 0v-2c0-.656-.126-1.733-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                                 />
                             </svg>
                         </span>
-                        <span class="ml-3">Add new</span>
+                        <span class="ml-3">Make a Claim </span>
                     </a>
                 </li>
+
+                <li class="my-px">
+                    <a
+                        href="#"
+                        class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
+                    >
+                        <span
+                            class="flex items-center justify-center text-lg text-gray-400"
+                        >
+                            <svg
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                class="h-6 w-6"
+                            >
+                                <path
+                                    d="M27 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 035.356-1.858M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                />
+                            </svg>
+                        </span>
+                        <span class="ml-3">Track Claim</span>
+                    </a>
+                </li>
+
 
                 <li class="my-px">
                     <span
@@ -382,9 +406,7 @@
         <footer class="footer px-4 py-6">
             <div class="footer-content">
                 <p class="text-sm text-gray-600 text-center">
-                    © Brandname 2020. All rights reserved. <a
-                        href="https://twitter.com/iaminos">by iAmine</a
-                    >
+                    ©  Copyright © 1999-2023 NCB Jamaica.
                 </p>
             </div>
         </footer>
