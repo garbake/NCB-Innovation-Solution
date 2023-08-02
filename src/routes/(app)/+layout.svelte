@@ -65,7 +65,7 @@
                 class="text-blue-800 transition hover:text-blue-700"
                   href="/portal"
                 >
-                  TRI Portal
+                  TCIMS Portal
                 </a>
               </li>
             </ul>

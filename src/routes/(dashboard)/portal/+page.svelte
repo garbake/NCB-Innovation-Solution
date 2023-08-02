@@ -47,8 +47,7 @@
             </h1>
 
             <p class="mt-4 max-w-lg sm:text-xl/relaxed">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Nesciunt illo tenetur fuga ducimus numquam ea!
+                <!-- Fill here-->
             </p>
 
             <div
