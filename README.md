@@ -1,5 +1,11 @@
 # NCB Innovation Team 5 Project 
 
+## TODO List
+
+* Write Declaration form
+* Make a claim form
+* 
+
 
 # create-svelte
 
