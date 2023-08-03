@@ -4,8 +4,8 @@
         <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-blue-600 rounded-full shrink-0 dark:border-blue-500">
             1
         </span>
-        Personal <span class="hidden sm:inline-flex sm:ml-2">Info</span>
-        <svg class="w-3 h-3 ml-2 sm:ml-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+        Personal <span class=" sm:inline-flex sm:ml-2">Info</span>
+        <svg class="w-3 h-3 ml-2 sm:ml-4"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
         </svg>
     </li>
@@ -13,8 +13,8 @@
         <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
             2
         </span>
-        Account <span class="hidden sm:inline-flex sm:ml-2">Info</span>
-        <svg class="w-3 h-3 ml-2 sm:ml-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+        Account <span class="sm:inline-flex sm:ml-2">Info</span>
+        <svg class="w-3 h-3 ml-2 sm:ml-4"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
         </svg>
     </li>
