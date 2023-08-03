@@ -13,7 +13,7 @@
     <aside
         class="sidebar w-64 md:shadow transform -translate-x-full md:translate-x-0 transition-transform duration-150 ease-in bg-white"
     >
-        <div class="sidebar-header  bold flex items-center justify-center py-4">
+        <div class="sidebar-header  bold flex items-center justify-center pt-2">
             <div class="inline-flex">
                 <a href="/portal" class="inline-flex flex-row items-center">
                     <img src={logo}/>
@@ -23,9 +23,9 @@
         <div class="sidebar-content px-4 py-6">
             <ul class="flex flex-col w-full">
 
-                <li class="my-px">
+                <li class="">
                     <span
-                        class="flex font-medium text-sm text-black px-4 my-4 uppercase"
+                        class="flex font-medium text-sm text-black px-4  uppercase"
                         >User Control</span
                     >
                 </li>
