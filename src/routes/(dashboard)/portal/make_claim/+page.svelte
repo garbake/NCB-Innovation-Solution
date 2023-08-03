@@ -32,7 +32,7 @@
                 />
 
             <label class="pt-4 block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-                Please Upload The Invoice Overdue 
+                Please Display Your Attempt Of Making Contact With this Business Image Of Emai Call logs. etc
             </label>
             
             <div  class=" pl-50 pr-50 flex items-center justify-center w-full">

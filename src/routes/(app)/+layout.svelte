@@ -78,7 +78,14 @@
               class="rounded-md bg-blue-800 hover:bg-blue-700 transition px-5 py-2.5 text-sm font-medium text-white shadow"
               href="/login"
             >
-              Login
+            Customer Login  
+            </a>
+
+            <a
+              class="rounded-md bg-blue-800 hover:bg-blue-700 transition px-5 py-2.5 text-sm font-medium text-white shadow"
+              href="/emp_login"
+            >
+            Employeee Login
             </a>
 
             <div class="hidden sm:flex">
