@@ -6,6 +6,7 @@
 	let showModal = false;
     const dispatch = createEventDispatcher();
     let currentStep = 1;
+    let debtorRates = 0;
 
     // @ts-ignore
     function goToStep(step) {
@@ -29,6 +30,19 @@
         // Handle form submission here
         dispatch("formSubmitted");
     }
+
+    function decreaseRate() {
+    if (debtorRates > 0) {
+      debtorRates--;
+    }
+  }
+
+  function increaseRate() {
+    if (debtorRates < 10) {
+      debtorRates++;
+    }
+  }
+
 </script>
 
 
@@ -339,23 +353,45 @@
                     required
                 />
             </div>
-            <div class="mb-6">
-                <label
-                    for="password"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >something</label
-                >
-                <input
-                    type="text"
-                    id="password"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="something"
-                    required
-                />
-            </div>
         </div>
 
         <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
+             <div>
+              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How long haave this business Existed?</label>
+              <input type="date" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
+          </div>
+
+          <div>
+              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Rate their likelihood of making a timely payment, with 1 being the lowest and 10 the highest.</label>
+              <button
+            type="button"
+            id="minus"
+            on:click={() => decreaseRate()}
+            disabled={debtorRates === 0}
+            class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+          >
+            &minus;
+          </button>
+
+          <input
+            type="number"
+            disabled
+            id="Quantity"
+            bind:value={debtorRates}
+            class="h-10 w-16 rounded border-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
+          />
+
+          <button
+            type="button"
+            id="plus"
+            on:click={() => increaseRate()}
+            disabled={debtorRates === 10}
+            class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+          >
+            &plus;
+          </button>
+          </div>
+
             <div>
                 <label
                     for="website"
