@@ -16,14 +16,12 @@
             Make Payment via Existing Ncb Ammount
           </button>
 
-          
-
         </div>
 
       </div>
 
       <div class="justify-center">
-        <span class=" hidden sm:inline-flex sm:ml-2">Instead</span>
+        <span class=" hidden sm:inline-flex sm:ml-2">Instead1</span>
     </div>
 
     <div class="pl-20 pr-20">
