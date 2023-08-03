@@ -1,101 +1,27 @@
-<div class="flow-root">
-    <div class="-my-8 divide-y divide-gray-100">
-      <details class="group py-8 [&_summary::-webkit-details-marker]:hidden" open>
-        <summary
-          class="flex cursor-pointer items-center justify-between text-gray-900"
-        >
-          <h2 class="text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing?
-          </h2>
-  
-          <span class="relative h-5 w-5 shrink-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-  
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </span>
-        </summary>
-  
-        <p class="mt-4 leading-relaxed text-gray-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-          veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
-          nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-          corporis earum similique!
-        </p>
-      </details>
-  
-      <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
-        <summary
-          class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
-        >
-          <h2 class="text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing?
-          </h2>
-  
-          <span class="relative h-5 w-5 shrink-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-  
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </span>
-        </summary>
-  
-        <p class="mt-4 leading-relaxed text-gray-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-          veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
-          nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-          corporis earum similique!
-        </p>
-      </details>
-    </div>
-  </div>
+
+<ol class="flex items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4">
+    <li class="flex items-center text-blue-600 dark:text-blue-500">
+        <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-blue-600 rounded-full shrink-0 dark:border-blue-500">
+            1
+        </span>
+        Personal <span class="hidden sm:inline-flex sm:ml-2">Info</span>
+        <svg class="w-3 h-3 ml-2 sm:ml-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+        </svg>
+    </li>
+    <li class="flex items-center">
+        <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+            2
+        </span>
+        Account <span class="hidden sm:inline-flex sm:ml-2">Info</span>
+        <svg class="w-3 h-3 ml-2 sm:ml-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+        </svg>
+    </li>
+    <li class="flex items-center">
+        <span class="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+            3
+        </span>
+        Review
+    </li>
+</ol>
