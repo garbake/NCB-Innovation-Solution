@@ -81,19 +81,12 @@
             Customer Login  
             </a>
 
-            <a
-              class="rounded-md bg-blue-800 hover:bg-blue-700 transition px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="/employee_portal/"
-            >
-            Employeee Login
-            </a>
-
             <div class="hidden sm:flex">
               <a
                 class="rounded-md bg-gray-100  hover:bg-blue-800 transition hover:text-white  px-5 py-2.5 text-sm font-medium text-blue-800"
                 href="/signup"
               >
-                Signup
+                Sign up
               </a>
             </div>
             

@@ -2,7 +2,7 @@
     <div class="pt-5 pl-5 w-full px-3 mb-6 md:mb-0">
         <div class="mx-auto max-w-lg text-center">
             <h2 class="text-2xl font-bold text-blue-900 md:text-3xl">
-                Debtor TCI Claim Form
+                 TCI Claim Form
             </h2>
 
             <p
@@ -16,7 +16,7 @@
             class="pt-4 block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             for="grid-state"
         >
-            Please Enter Some Detials about the Non-payment Of The Claim
+            Please Enter Some Detials about the Non-payment 
         </label>
 
         <textarea

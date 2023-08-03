@@ -21,7 +21,7 @@
       </div>
 
       <div class="justify-center">
-        <span class=" hidden sm:inline-flex sm:ml-2">Instead1</span>
+        <span class=" hidden sm:inline-flex sm:ml-2">Instead</span>
     </div>
 
     <div class="pl-20 pr-20">
