@@ -104,8 +104,22 @@
         </div>
     </div>
 
+    <div class="flex flex-wrap">
+
+        <div class="w-full  px-4 py-4">
+          <button
+            type="submit"
+            class="block w-full rounded-lg bg-blue-800 hover:bg-blue-700 transition px-5 py-3 text-sm font-medium text-white"
+          >
+            Make Payment
+          </button>
+          </div>
+          </div>
 
     
+
+
+
 
 
     

@@ -1,5 +1,9 @@
 <script>
     import { createEventDispatcher } from "svelte";
+    
+
+
+	let showModal = false;
     const dispatch = createEventDispatcher();
     let currentStep = 1;
 
@@ -26,6 +30,9 @@
         dispatch("formSubmitted");
     }
 </script>
+
+
+  
 
 <ol
     class="flex items-center justify-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4"
@@ -392,7 +399,7 @@
 {#if currentStep === 3}
     <form on:submit|preventDefault={handleSubmit}>
         <div class="mb-6">
-            <h3 class="text-xl font-bold mb-4">Step 3</h3>
+            <p class="text-xl  mb-4">By utilizing our trade credit insurance services, you hereby agree that all information provided to our company must be accurate, complete, and truthful to the best of your knowledge. Any intentional or inadvertent misrepresentation, falsification, or fraudulent activity in the information provided will not be tolerated. In the event that fraudulent activity is detected, our company reserves the right to take legal action and prosecute offenders to the fullest extent of the law. Moreover, offenders may be subject to fines and penalties as deemed appropriate by the relevant authorities. By accessing and using our trade credit insurance services, you acknowledge and consent to these terms and agree to comply with all applicable laws and regulations governing trade credit insurance.</p>
             <!-- Step 3 form fields -->
             <div>
                 <!-- Your Step 3 form fields here -->
@@ -401,7 +408,7 @@
                 type="submit"
                 class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             >
-                Submit
+                Click To Agree
             </button>
         </div>
     </form>
