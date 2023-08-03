@@ -153,114 +153,12 @@
             </div>
             </div>
 
-            <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
-            <div>
-                <label
-                    for="company"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
-                >placeholder</label> 
-                <input
-                    type="text"
-                    id="company"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder="Flowbite"
-                    required
-                />
-            </div>
-            <div>
-                <label
-                    for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900"
-                    >How often you credit goods</label
-                >
-                <input
-                    type="tel"
-                    id="phone"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder="123-45-678"
-                    required
-                />
-            </div>
-            <div>
-                <label
-                    for="website"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
-                    >Your type of debtors</label>
-                <input
-                    type="text"
-                    id="website"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
-                    required
-                />
-            </div>
-            <div>
-                <label
-                    for="visitors"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
-                    >Placeholder</label
-                >
-                <input
-                    type="number"
-                    id="visitors"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
-                    required
-                />
-            </div>
-        </div>
-        
-
-        <div class="px-3">
-            <div class="mb-6">
-                <label
-                    for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900"
-                    >Email address</label
-                >
-                <input
-                    type="email"
-                    id="email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder="john.doe@company.com"
-                    required
-                />
-            </div>
-            <!-- <div class="mb-6">
-                <label
-                    for="password"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Password</label
-                >
-                <input
-                    type="password"
-                    id="password"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="•••••••••"
-                    required
-                />
-            </div>
-            <div class="mb-6">
-                <label
-                    for="confirm_password"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Confirm password</label
-                >
-                <input
-                    type="password"
-                    id="confirm_password"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="•••••••••"
-                    required
-                />
-            </div> -->
-        </div>
 
         <button
             type="submit"
-            class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+            class="mt-6 px-4 py-2 mb-3 ml-3 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
         >
-            Continue to Step 2
+            Continue
         </button>
     </form>
 {/if}
@@ -328,14 +226,7 @@
                     required
                 />
             </div>
-            <!-- <div>
-              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-              <input type="url" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required>
-          </div>
-          <div>
-              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-              <input type="number" id="visitors" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
-          </div> -->
+            
         </div>
         <div class="px-3">
             <div class="mb-6">
@@ -425,9 +316,9 @@
 
         <button
             type="submit"
-            class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+            class="mt-6 px-4 py-2 mb-3 ml-3 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
         >
-            Continue to Step 3
+            Continue
         </button>
     </form>
 {/if}
