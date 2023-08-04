@@ -78,7 +78,7 @@
               class="rounded-md bg-blue-800 hover:bg-blue-700 transition px-5 py-2.5 text-sm font-medium text-white shadow"
               href="/login"
             >
-            Customer Login  
+            Login  
             </a>
 
             <div class="hidden sm:flex">
@@ -121,7 +121,7 @@
 <slot/>
 
 
-<footer class="bg-blue-900">
+<footer class="bg-blue-900 sticky">
     <div class=" max-w-screen-xl px-4 pb-6  sm:px-6 lg:px-8">
       
   
