@@ -10,7 +10,7 @@
         class="max-w-xl ml-4  mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:scale-105 transition w-full md:w-auto"
     >
         <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
         >
             Sigma Ltd
         </h5>

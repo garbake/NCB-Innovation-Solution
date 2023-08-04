@@ -15,7 +15,7 @@
         >
             <a href="#">
                 <h5
-                    class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 "
                 >
                     Sigma Ltd
                 </h5>
@@ -83,7 +83,7 @@
         >
             <a href="#">
                 <h5
-                    class=" flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class=" flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900"
                 >
                     KNRS CO. LTD
                 </h5>
