@@ -1,9 +1,7 @@
 <script>
     import { createEventDispatcher } from "svelte";
-    
 
-
-	let showModal = false;
+    let showModal = false;
     const dispatch = createEventDispatcher();
     let currentStep = 1;
     let debtorRates = 0;
@@ -32,24 +30,20 @@
     }
 
     function decreaseRate() {
-    if (debtorRates > 0) {
-      debtorRates--;
+        if (debtorRates > 0) {
+            debtorRates--;
+        }
     }
-  }
 
-  function increaseRate() {
-    if (debtorRates < 10) {
-      debtorRates++;
+    function increaseRate() {
+        if (debtorRates < 10) {
+            debtorRates++;
+        }
     }
-  }
-
 </script>
 
-
-  
-
 <ol
-    class="flex items-center justify-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base  sm:p-4 sm:space-x-4"
+    class="flex items-center justify-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base sm:p-4 sm:space-x-4"
 >
     {#each [1, 2, 3] as step}
         <li
@@ -141,18 +135,17 @@
             <div class="mb-6">
                 <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                     >Describe the types of goods/services you credit</label
                 >
                 <textarea
                     id="email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="description"
                     required
                 />
             </div>
-            </div>
-
+        </div>
 
         <button
             type="submit"
@@ -170,13 +163,13 @@
             <div>
                 <label
                     for="first_name"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                     >Business name</label
                 >
                 <input
                     type="text"
                     id="first_name"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="John"
                     required
                 />
@@ -200,13 +193,13 @@
             <div>
                 <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                     >Email address</label
                 >
                 <input
                     type="email"
                     id="email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-800 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-800 focus:border-blue-500 block w-full p-2.5"
                     placeholder="janenterprise@gmail.com"
                     required
                 />
@@ -215,31 +208,31 @@
             <div>
                 <label
                     for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                     >Phone number</label
                 >
                 <input
                     type="number"
                     id="phone"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="123-45-678"
                     required
                 />
             </div>
-            
         </div>
+        
         <div class="px-3">
             <div class="mb-6">
                 <label
                     for="debtor_address"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                 >
                     Address</label
                 >
                 <input
                     type="text"
                     id="debtor_address"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="up down round town"
                     required
                 />
@@ -247,53 +240,69 @@
         </div>
 
         <div class="grid gap-6 mb-6 md:grid-cols-2 px-3 pt-3">
-             <div>
-              <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How long haave this business Existed?</label>
-              <input type="date" id="website" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="flowbite.com" required>
-          </div>
+            <div>
+                <label
+                    for="website"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >How long haave this business Existed?</label
+                >
+                <input
+                    type="date"
+                    id="website"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="flowbite.com"
+                    required
+                />
+            </div>
 
-          <div>
-              <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 "> Rate their likelihood of making a timely payment, with 1 being the lowest and 10 the highest.</label>
-              <button
-            type="button"
-            id="minus"
-            on:click={() => decreaseRate()}
-            disabled={debtorRates === 0}
-            class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-          >
-            &minus;
-          </button>
+            <div>
+                <label
+                    for="visitors"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                >
+                    Rate their likelihood of making a timely payment, with 1
+                    being the lowest and 10 the highest.</label
+                >
+                <button
+                    type="button"
+                    id="minus"
+                    on:click={() => decreaseRate()}
+                    disabled={debtorRates === 0}
+                    class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                >
+                    &minus;
+                </button>
 
-          <input
-            type="number"
-            disabled
-            id="Quantity"
-            bind:value={debtorRates}
-            class="h-10 w-16 rounded border-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
-          />
+                <input
+                    type="number"
+                    disabled
+                    id="Quantity"
+                    bind:value={debtorRates}
+                    class="h-10 w-16 rounded border-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
+                />
 
-          <button
-            type="button"
-            id="plus"
-            on:click={() => increaseRate()}
-            disabled={debtorRates === 10}
-            class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
-          >
-            &plus;
-          </button>
-          </div>
+                <button
+                    type="button"
+                    id="plus"
+                    on:click={() => increaseRate()}
+                    disabled={debtorRates === 10}
+                    class="w-10 h-10 leading-10 text-gray-600 transition hover:opacity-75"
+                >
+                    &plus;
+                </button>
+            </div>
 
             <div>
                 <label
                     for="website"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
+                    class="block mb-2 text-sm font-medium text-gray-900"
                     >Have you ever credited this business before? If yes, upload
                     the last invoice</label
                 >
                 <input
                     type="file"
                     id="website"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="flowbite.com"
                     required
                 />
@@ -307,7 +316,7 @@
                 <input
                     type="file"
                     id="visitors"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder=""
                     required
                 />
@@ -324,19 +333,37 @@
 {/if}
 
 {#if currentStep === 3}
-    <form on:submit|preventDefault={handleSubmit}>
-        <div class="mb-6">
-            <p class="text-xl  mb-4">By utilizing our trade credit insurance services, you hereby agree that all information provided to our company must be accurate, complete, and truthful to the best of your knowledge. Any intentional or inadvertent misrepresentation, falsification, or fraudulent activity in the information provided will not be tolerated. In the event that fraudulent activity is detected, our company reserves the right to take legal action and prosecute offenders to the fullest extent of the law. Moreover, offenders may be subject to fines and penalties as deemed appropriate by the relevant authorities. By accessing and using our trade credit insurance services, you acknowledge and consent to these terms and agree to comply with all applicable laws and regulations governing trade credit insurance.</p>
+    <form  on:submit|preventDefault={handleSubmit}>
+        <div class=" mb-6 px-3 pt-3">
             <!-- Step 3 form fields -->
-            <div>
-                <!-- Your Step 3 form fields here -->
+
+            <div class="pr-4 max-w-6xl">
+                <p class="justify-center text-xl">
+                    By utilizing our trade credit insurance services, you hereby
+                    agree that all information provided to our company must be
+                    accurate, complete, and truthful to the best of your
+                    knowledge. Any intentional or inadvertent misrepresentation,
+                    falsification, or fraudulent activity in the information
+                    provided will not be tolerated. In the event that fraudulent
+                    activity is detected, our company reserves the right to take
+                    legal action and prosecute offenders to the fullest extent
+                    of the law. Moreover, offenders may be subject to fines and
+                    penalties as deemed appropriate by the relevant authorities.
+                    By accessing and using our trade credit insurance services,
+                    you acknowledge and consent to these terms and agree to
+                    comply with all applicable laws and regulations governing
+                    trade credit insurance.
+                </p>
             </div>
-            <button
-                type="submit"
+        </div>
+        <div class=" flex justify-center py-2">
+            <a
+            
+                href="/portal/apply/thank_you"
                 class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             >
                 Click To Agree
-            </button>
+            </a>
         </div>
     </form>
 {/if}

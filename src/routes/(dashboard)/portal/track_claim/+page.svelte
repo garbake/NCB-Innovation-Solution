@@ -1,4 +1,4 @@
-<div class="mx-auto max-w-lg text-center">
+<div class="mx-auto max-w-lg text-center py-4 px-4">
     <h2 class="text-2xl font-bold text-blue-900 md:text-3xl">Tracking Claim</h2>
 
     <p class="text-gray-500 sm:mt-2 sm:block">

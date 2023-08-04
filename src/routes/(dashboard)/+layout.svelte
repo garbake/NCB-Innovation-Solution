@@ -30,7 +30,7 @@
                     >
                 </li>
 
-                <li class="my-px">
+                <!-- <li class="my-px">
                     <a
                         href="/portal/apply"
                         class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
@@ -54,7 +54,7 @@
                         </span>
                         <span class="ml-3">Apply For Insurance</span>
                     </a>
-                </li>
+                </li> -->
 
                 <li class="my-px">
                     <a
@@ -224,7 +224,7 @@
 
                 <li class="my-px">
                     <a
-                        href="#"
+                        href="/"
                         class="flex flex-row items-center h-10 px-3 rounded-lg text-black-300 hover:bg-blue-800 hover:text-white"
                     >
                         <span
