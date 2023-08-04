@@ -129,10 +129,10 @@
                     placeholder=""
                     required
                 >
-                    <option value="" disabled selected>Select how often</option>
-                    <option value="Once a week"> Once a week</option>
-                    <option value="Every two weeks"> Every two weeks</option>
-                    <option value="Once a month"> Once a month</option>
+                    <option value="" disabled selected>Select How often</option>
+                    <option value="Once a several times a month">Often</option>
+                    <option value="Every two weeks">Few Times a Year</option>
+                    <option value="Once a year">Rearly</option>
                 </select>
             </div>
         </div>
@@ -326,6 +326,7 @@
 {#if currentStep === 3}
     <form on:submit|preventDefault={handleSubmit}>
         <div class="mb-6">
+            <div class="pl-10 pr-10">
             <p class="text-xl  mb-4">By utilizing our trade credit insurance services, you hereby agree that all information provided to our company must be accurate, complete, and truthful to the best of your knowledge. Any intentional or inadvertent misrepresentation, falsification, or fraudulent activity in the information provided will not be tolerated. In the event that fraudulent activity is detected, our company reserves the right to take legal action and prosecute offenders to the fullest extent of the law. Moreover, offenders may be subject to fines and penalties as deemed appropriate by the relevant authorities. By accessing and using our trade credit insurance services, you acknowledge and consent to these terms and agree to comply with all applicable laws and regulations governing trade credit insurance.</p>
             <!-- Step 3 form fields -->
             <div>
@@ -337,6 +338,7 @@
             >
                 Click To Agree
             </button>
+        </div>
         </div>
     </form>
 {/if}
