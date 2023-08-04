@@ -123,10 +123,10 @@
                     placeholder=""
                     required
                 >
-                    <option value="" disabled selected>Select how often</option>
-                    <option value="Once a week"> Once a week</option>
-                    <option value="Every two weeks"> Every two weeks</option>
-                    <option value="Once a month"> Once a month</option>
+                    <option value="" disabled selected>Select How often</option>
+                    <option value="Once a several times a month">Often</option>
+                    <option value="Every two weeks">Few Times a Year</option>
+                    <option value="Once a year">Rearly</option>
                 </select>
             </div>
         </div>
